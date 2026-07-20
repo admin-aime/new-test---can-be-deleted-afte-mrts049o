@@ -1,0 +1,485 @@
+{
+  "version": 1,
+  "project": {
+    "name": "app",
+    "stack": [],
+    "createdAt": "2026-07-20T22:08:11.098Z"
+  },
+  "files": {
+    ".aime/blueprint/customers.json": {
+      "lines": 11,
+      "lastModified": "2026-07-20T22:10:48.174Z",
+      "summary": "customers.json",
+      "exports": [],
+      "imports": []
+    },
+    ".aime/blueprint/functions.json": {
+      "lines": 63,
+      "lastModified": "2026-07-20T22:10:59.428Z",
+      "summary": "functions.json",
+      "exports": [],
+      "imports": []
+    },
+    ".aime/blueprint/information.json": {
+      "lines": 48,
+      "lastModified": "2026-07-20T22:11:04.956Z",
+      "summary": "information.json",
+      "exports": [],
+      "imports": []
+    },
+    ".aime/blueprint/knowledge.json": {
+      "lines": 13,
+      "lastModified": "2026-07-20T22:11:08.893Z",
+      "summary": "knowledge.json",
+      "exports": [],
+      "imports": []
+    },
+    ".aime/blueprint/services.json": {
+      "lines": 43,
+      "lastModified": "2026-07-20T22:11:14.760Z",
+      "summary": "services.json",
+      "exports": [],
+      "imports": []
+    },
+    ".aime/blueprint/experiences.json": {
+      "lines": 31,
+      "lastModified": "2026-07-20T22:11:21.344Z",
+      "summary": "experiences.json",
+      "exports": [],
+      "imports": []
+    },
+    "package.json": {
+      "lines": 29,
+      "lastModified": "2026-07-20T22:11:44.193Z",
+      "summary": "Package configuration",
+      "exports": [],
+      "imports": []
+    },
+    "tsconfig.json": {
+      "lines": 24,
+      "lastModified": "2026-07-20T22:11:45.957Z",
+      "summary": "TypeScript configuration",
+      "exports": [],
+      "imports": []
+    },
+    "tsconfig.node.json": {
+      "lines": 12,
+      "lastModified": "2026-07-20T22:11:46.829Z",
+      "summary": "Configuration file",
+      "exports": [],
+      "imports": []
+    },
+    "tailwind.config.js": {
+      "lines": 7,
+      "lastModified": "2026-07-20T22:11:47.649Z",
+      "summary": "Configuration file",
+      "exports": [
+        "default"
+      ],
+      "imports": []
+    },
+    "postcss.config.js": {
+      "lines": 2,
+      "lastModified": "2026-07-20T22:11:48.074Z",
+      "summary": "Configuration file",
+      "exports": [
+        "default"
+      ],
+      "imports": []
+    },
+    "index.html": {
+      "lines": 13,
+      "lastModified": "2026-07-20T22:11:49.244Z",
+      "summary": "HTML entry point",
+      "exports": [],
+      "imports": []
+    },
+    "src/index.css": {
+      "lines": 13,
+      "lastModified": "2026-07-20T22:11:52.379Z",
+      "summary": "Stylesheet",
+      "exports": [],
+      "imports": []
+    },
+    "src/types.ts": {
+      "lines": 76,
+      "lastModified": "2026-07-20T22:11:57.324Z",
+      "summary": "Type definitions",
+      "exports": [
+        "Account",
+        "Contact",
+        "DealStage",
+        "STAGES",
+        "STAGE_PROBABILITY",
+        "STAGE_COLORS",
+        "STAGE_DOT",
+        "Opportunity",
+        "ActivityType",
+        "ACTIVITY_TYPES",
+        "Activity"
+      ],
+      "imports": []
+    },
+    "src/data/seed.ts": {
+      "lines": 48,
+      "lastModified": "2026-07-20T22:12:20.699Z",
+      "summary": "Exports: seedAccounts, seedContacts, seedOpportunities...",
+      "exports": [
+        "seedAccounts",
+        "seedContacts",
+        "seedOpportunities",
+        "seedActivities"
+      ],
+      "imports": [
+        "../types"
+      ]
+    },
+    "src/store/CrmContext.tsx": {
+      "lines": 115,
+      "lastModified": "2026-07-20T22:12:34.468Z",
+      "summary": "CrmProvider component",
+      "exports": [
+        "CrmProvider",
+        "useCrm"
+      ],
+      "imports": [
+        "react",
+        "../types",
+        "../data/seed"
+      ]
+    },
+    "src/hooks/useCrudState.ts": {
+      "lines": 28,
+      "lastModified": "2026-07-20T22:12:37.733Z",
+      "summary": "useCrudState hook",
+      "exports": [
+        "useCrudState"
+      ],
+      "imports": [
+        "react"
+      ]
+    },
+    "src/components/ConfirmDialog.tsx": {
+      "lines": 35,
+      "lastModified": "2026-07-20T22:12:41.758Z",
+      "summary": "ConfirmDialog component",
+      "exports": [
+        "default:ConfirmDialog"
+      ],
+      "imports": [
+        "lucide-react"
+      ]
+    },
+    "src/components/FormModal.tsx": {
+      "lines": 25,
+      "lastModified": "2026-07-20T22:12:44.455Z",
+      "summary": "FormModal component",
+      "exports": [
+        "default:FormModal"
+      ],
+      "imports": [
+        "lucide-react"
+      ]
+    },
+    "src/components/EmptyState.tsx": {
+      "lines": 25,
+      "lastModified": "2026-07-20T22:12:46.895Z",
+      "summary": "EmptyState component",
+      "exports": [
+        "default:EmptyState"
+      ],
+      "imports": [
+        "lucide-react"
+      ]
+    },
+    "src/components/Layout.tsx": {
+      "lines": 85,
+      "lastModified": "2026-07-20T22:17:52.575Z",
+      "summary": "Layout component",
+      "exports": [
+        "default:Layout"
+      ],
+      "imports": [
+        "react",
+        "react-router-dom"
+      ]
+    },
+    "src/pages/Dashboard.tsx": {
+      "lines": 142,
+      "lastModified": "2026-07-20T22:13:22.547Z",
+      "summary": "Dashboard component",
+      "exports": [
+        "default:Dashboard"
+      ],
+      "imports": [
+        "../store/CrmContext",
+        "../types",
+        "lucide-react",
+        "react-router-dom"
+      ]
+    },
+    "src/pages/Accounts.tsx": {
+      "lines": 142,
+      "lastModified": "2026-07-20T22:13:42.838Z",
+      "summary": "Accounts component",
+      "exports": [
+        "default:Accounts"
+      ],
+      "imports": [
+        "react",
+        "react-router-dom",
+        "../store/CrmContext",
+        "../types",
+        "lucide-react",
+        "../components/FormModal",
+        "../components/ConfirmDialog",
+        "../components/EmptyState"
+      ]
+    },
+    "src/pages/AccountDetail.tsx": {
+      "lines": 170,
+      "lastModified": "2026-07-20T22:14:05.292Z",
+      "summary": "AccountDetail component",
+      "exports": [
+        "default:AccountDetail"
+      ],
+      "imports": [
+        "react-router-dom",
+        "../store/CrmContext",
+        "lucide-react",
+        "../types",
+        "react",
+        "../components/FormModal",
+        "../components/ConfirmDialog"
+      ]
+    },
+    "src/pages/Contacts.tsx": {
+      "lines": 138,
+      "lastModified": "2026-07-20T22:14:24.483Z",
+      "summary": "Contacts component",
+      "exports": [
+        "default:Contacts"
+      ],
+      "imports": [
+        "react",
+        "react-router-dom",
+        "../store/CrmContext",
+        "../types",
+        "lucide-react",
+        "../components/FormModal",
+        "../components/ConfirmDialog",
+        "../components/EmptyState"
+      ]
+    },
+    "src/pages/ContactDetail.tsx": {
+      "lines": 120,
+      "lastModified": "2026-07-20T22:14:42.393Z",
+      "summary": "ContactDetail component",
+      "exports": [
+        "default:ContactDetail"
+      ],
+      "imports": [
+        "react-router-dom",
+        "../store/CrmContext",
+        "lucide-react",
+        "../types",
+        "react",
+        "../components/FormModal",
+        "../components/ConfirmDialog"
+      ]
+    },
+    "src/pages/Opportunities.tsx": {
+      "lines": 188,
+      "lastModified": "2026-07-20T22:15:07.420Z",
+      "summary": "Opportunities component",
+      "exports": [
+        "default:Opportunities"
+      ],
+      "imports": [
+        "react",
+        "react-router-dom",
+        "../store/CrmContext",
+        "../types",
+        "lucide-react",
+        "../components/FormModal",
+        "../components/ConfirmDialog",
+        "../components/EmptyState"
+      ]
+    },
+    "src/pages/OpportunityDetail.tsx": {
+      "lines": 150,
+      "lastModified": "2026-07-20T22:15:37.424Z",
+      "summary": "OpportunityDetail component",
+      "exports": [
+        "default:OpportunityDetail"
+      ],
+      "imports": [
+        "react-router-dom",
+        "../store/CrmContext",
+        "lucide-react",
+        "../types",
+        "react",
+        "../components/FormModal",
+        "../components/ConfirmDialog"
+      ]
+    },
+    "src/pages/Pipeline.tsx": {
+      "lines": 109,
+      "lastModified": "2026-07-20T22:15:50.798Z",
+      "summary": "Pipeline component",
+      "exports": [
+        "default:Pipeline"
+      ],
+      "imports": [
+        "react",
+        "react-router-dom",
+        "../store/CrmContext",
+        "../types",
+        "lucide-react"
+      ]
+    },
+    "src/pages/Activities.tsx": {
+      "lines": 114,
+      "lastModified": "2026-07-20T22:16:10.313Z",
+      "summary": "Activities component",
+      "exports": [
+        "default:Activities"
+      ],
+      "imports": [
+        "react",
+        "react-router-dom",
+        "../store/CrmContext",
+        "../types",
+        "lucide-react",
+        "../components/FormModal",
+        "../components/ConfirmDialog",
+        "../components/EmptyState"
+      ]
+    },
+    "src/pages/ModelOverview.tsx": {
+      "lines": 119,
+      "lastModified": "2026-07-20T22:17:53.602Z",
+      "summary": "ModelOverview component",
+      "exports": [
+        "default:ModelOverview"
+      ],
+      "imports": [
+        "lucide-react"
+      ]
+    },
+    "src/App.tsx": {
+      "lines": 67,
+      "lastModified": "2026-07-20T22:16:40.735Z",
+      "summary": "App component",
+      "exports": [
+        "default:App"
+      ],
+      "imports": [
+        "react",
+        "react-router-dom",
+        "./store/CrmContext",
+        "./components/Layout",
+        "./pages/Dashboard",
+        "./pages/Accounts",
+        "./pages/AccountDetail",
+        "./pages/Contacts",
+        "./pages/ContactDetail",
+        "./pages/Opportunities",
+        "./pages/OpportunityDetail",
+        "./pages/Pipeline",
+        "./pages/Activities",
+        "./pages/ModelOverview"
+      ]
+    },
+    "src/main.tsx": {
+      "lines": 22,
+      "lastModified": "2026-07-20T22:16:43.092Z",
+      "summary": "main component",
+      "exports": [],
+      "imports": [
+        "react",
+        "react-dom/client",
+        "@aime-platform/aime-feedback-module",
+        "./App",
+        "./index.css"
+      ]
+    },
+    ".env.example": {
+      "lines": 7,
+      "lastModified": "2026-07-20T22:16:46.682Z",
+      "summary": ".env.example",
+      "exports": [],
+      "imports": []
+    },
+    "src/vite-env.d.ts": {
+      "lines": 2,
+      "lastModified": "2026-07-20T22:17:33.883Z",
+      "summary": "vite-env.d.ts",
+      "exports": [],
+      "imports": []
+    }
+  },
+  "dependencies": {},
+  "recentChanges": [
+    {
+      "timestamp": "2026-07-20T22:17:53.580Z",
+      "file": "src/pages/ModelOverview.tsx",
+      "change": "modifyd src/pages/ModelOverview.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T22:17:52.568Z",
+      "file": "src/components/Layout.tsx",
+      "change": "modifyd src/components/Layout.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T22:17:46.094Z",
+      "file": "src/pages/ModelOverview.tsx",
+      "change": "modifyd src/pages/ModelOverview.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T22:17:45.023Z",
+      "file": "src/components/Layout.tsx",
+      "change": "modifyd src/components/Layout.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T22:17:40.212Z",
+      "file": "src/components/Layout.tsx",
+      "change": "modifyd src/components/Layout.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T22:17:36.027Z",
+      "file": "src/pages/ModelOverview.tsx",
+      "change": "modifyd src/pages/ModelOverview.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T22:17:34.891Z",
+      "file": "src/components/Layout.tsx",
+      "change": "modifyd src/components/Layout.tsx",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T22:17:33.879Z",
+      "file": "src/vite-env.d.ts",
+      "change": "modifyd src/vite-env.d.ts",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T22:16:46.676Z",
+      "file": ".env.example",
+      "change": "modifyd .env.example",
+      "type": "modify"
+    },
+    {
+      "timestamp": "2026-07-20T22:16:43.088Z",
+      "file": "src/main.tsx",
+      "change": "modifyd src/main.tsx",
+      "type": "modify"
+    }
+  ]
+}
